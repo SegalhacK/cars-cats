@@ -28,3 +28,15 @@ app.use(require('./routes/router'));
 const server = app.listen(port, function() {
   console.log('Escuchando en el puerto ' + port);
 });
+
+//Hardcodded data
+
+
+let cars = [
+  {brand: "Koenigsegg", model: "agera", hp: 500},
+  {brand: "Infiniti", model: "q60", hp: 250},
+  {brand: "Peugeot", model: "206", hp: 120},
+  {brand: "Audi", model: "q7", hp: 180},
+];
+
+module.exports = cars;
