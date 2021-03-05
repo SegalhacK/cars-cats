@@ -17,11 +17,11 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 // para archivos estaticos
-app.use('/', express.static("static"));
+app.use('/static', express.static("static"));
 
 // importar las rutas
 // app.use(require('./routes/auth'));
-// app.use(require('./routes/routes'));
+app.use(require('./routes/router'));
 
 
 // Lanzamos nuestra aplicación
